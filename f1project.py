@@ -36,8 +36,6 @@ body {
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # ---------- LOAD DATA ----------
-fastf1.Cache.enable_cache("/Users/varunramanathan/Downloads/f1data_cache")
-
 try:
     session = fastf1.get_session(2025, 'Miami', 'R')
     session.load()
