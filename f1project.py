@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
 import os
+cache_dir = os.path.join(os.getcwd(), "f1data_cache")
+os.makedirs(cache_dir, exist_ok=True)
+fastf1.Cache.enable_cache(cache_dir)
+
 
 # ---------- CONFIG ----------
 st.set_page_config(page_title="Ferrari Strategy Analyzer – Miami GP 2025", layout="wide")
